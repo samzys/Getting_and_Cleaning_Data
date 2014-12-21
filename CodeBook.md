@@ -18,7 +18,7 @@ axis             | 3-axis signals in the X, Y and Z directions
 meanValue        | Average of each variable for each activity and each subject
 
 
-tidyData Summary
+Summary
 ---------------------------------
 'data.frame':  11880 obs. of  10 variables:
  $ subject:     
@@ -35,7 +35,7 @@ tidyData Summary
  -Factor w/ 2 levels "Accelerometer","Gyroscope"
  
  $ acceleration: 
- -Factor w/ 3 levels NA,"Body","Gravity"
+ -Factor w/ 2 levels "Body","Gravity"
  
  
  $ mathMethod: 
@@ -43,15 +43,15 @@ tidyData Summary
  
  
  $ jerk:
- -Factor w/ 2 levels NA,"Jerk"
+ -Factor w/ 1 levels "Jerk"
  
  
  $ magnitude: 
- -Factor w/ 2 levels NA,"Mag"
+ -Factor w/ 1 levels "Mag"
  
  
  $ axis: 
- -Factor w/ 4 levels NA,"X","Y","Z"
+ -Factor w/ 3 levels "X","Y","Z"
  
  
  $ meanValue: 

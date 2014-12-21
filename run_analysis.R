@@ -1,4 +1,4 @@
-setwd("C:\\Users\\Sam\\SkyDrive\\Documents\\Coursera\\3. Getting and Cleaning Data\\project")
+#setwd("C:\\Users\\Sam\\SkyDrive\\Documents\\Coursera\\3. Getting and Cleaning Data\\project")
 ##
 #list.files("./UCI HAR Dataset",recursive = T)
 library(reshape2)
@@ -74,4 +74,3 @@ tidyData<-tidyData[,c(1:2,4:10,3)]
 tidyData$activities<-as.factor(tidyData$activities)
 #write to a txt file
 write.table(tidyData, file="tidy_dataset.txt",row.names = FALSE)
-
