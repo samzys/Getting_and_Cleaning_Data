@@ -71,6 +71,7 @@ df$axis<-factor(y %*% x, labels=c(NA, "X", "Y", "Z"))
 tidyData<-subset(df, select=c(1,2,4:11))
 names(tidyData)<-gsub("value", "meanValue", names(tidyData))
 tidyData<-tidyData[,c(1:2,4:10,3)]
+tidyData$activities<-as.factor(tidyData$activities)
 #write to a txt file
 write.table(tidyData, file="tidy_dataset.txt",row.names = FALSE)
 
