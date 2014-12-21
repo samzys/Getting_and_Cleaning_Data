@@ -22,11 +22,11 @@ tidyData Summary
 ---------------------------------
 'data.frame':  11880 obs. of  10 variables:
  $ subject:     
- -int  1 2 3 4 5 6 7 8 9 10 ...30
+ *int  1 2 3 4 5 6 7 8 9 10 ...30
  
  
  $ activities:  
- -Factor w/ 6 levels "laying","sitting","standing","walking","walkingdownstairs","walkingupstairs"
+ *Factor w/ 6 levels "laying","sitting","standing","walking","walkingdownstairs","walkingupstairs"
  
  $ domain:      
  -Factor w/ 2 levels "Time","Freq"
