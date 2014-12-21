@@ -27,7 +27,8 @@ How does the script work
 1. Download and Unzip the Samsung data into the working directory (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. Download and Put run_analysis.r into the same working directory as in step 1
 3. Run the script using RStudio which will produce a tidy data set for further analysis
-4. The tidy dataset is 180x68 because there are 30 subjects and 6 activities, thus "for each activities and each subject" means 30x6=180 rows. 
+4. The tidy dataset fullfills the following criterias: each variable forms a column, each observation forms a row, each table/file stores data about one kinds of obervation
+5. Refer to the CodeBook.md for a detail explaination of this tidy dataset
 
 What does the script do
 ---------------------------
@@ -38,3 +39,9 @@ What does the script do
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
+Total number of observations
+--------------------------------
+*There are total 30 subjects are participated in this study. 
+*There are 6 activities
+*The desired features are 66 (e.g., fBodyAcc-mean()-X)
+*Hence the total oberseration in the clean dataset is 30 x 6 x 66 = 11880

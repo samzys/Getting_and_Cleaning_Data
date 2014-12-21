@@ -6,15 +6,17 @@ Variable list and descriptions
 
 Variable name    | Description
 -----------------|------------
-subject          | ID the subject who performed the activity for each window sample. Its range is from 1 to 30.
-activity         | Activity name
-featDomain       | Feature: Time domain signal or frequency domain signal (Time or Freq)
-featInstrument   | Feature: Measuring instrument (Accelerometer or Gyroscope)
-featAcceleration | Feature: Acceleration signal (Body or Gravity)
-featVariable     | Feature: Variable (Mean or SD)
-featJerk         | Feature: Jerk signal
-featMagnitude    | Feature: Magnitude of the signals calculated using the Euclidean norm
-featAxis         | Feature: 3-axial signals in the X, Y and Z directions (X, Y, or Z)
-featCount        | Feature: Count of data points used to compute `average`
-featAverage      | Feature: Average of each variable for each activity and each subject
+subject          | ID of the subject who performed the activity(e.g., 1.2,...30)
+activity         | Activity name(e.g.,sitting, laying, walking and etc)
+domain           | the data is generated from time domain or frequency domain
+device           | whether the data is collected from the accelerometer or gyroscope
+acceleration     | whether it is a body acceleration signals or gravity acceleration signal)
+mathMethod       | the mathmatic method used for the raw data (e.g, Mean or SD)
+Jerk             | Jerk signal(derived from the body linear acceleration and angular velocity)
+Magnitude        | Magnitude of the signals calculated using the Euclidean norm
+axis             | 3-axis signals in the X, Y and Z directions
+meanValue        | Average of each variable for each activity and each subject
 
+
+
+subject
