@@ -30,13 +30,15 @@ What does the script do
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+
 How does the script work
 ---------------------------
 1. Download and Unzip the Samsung data into the working directory (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. Download and Put run_analysis.r into the same working directory as in step 1
 3. Run the script using RStudio which will produce a tidy data set for further analysis
 4. The tidy dataset fullfills the following criterias: each variable forms a column, each observation forms a row, each table/file stores data about one kinds of obervation
-5. load the tidydata into R using this 
+5. In oder to fullfill the tidy dataset requirement, there is a additional step to split variables names for original variable names. for example, it splits 1 variable with value(tBodyAcc-mean()-X) into 7 variables( "domain", "device", "acceleration", "mathMethod", "jerk","magnitude", "axis"). more details please refer to CodeBook.md
+6. load the tidydata into R using this 
 ```r
 df<-read.table("tidy_dataset.txt",header = T)
 ```
@@ -44,7 +46,7 @@ df<-read.table("tidy_dataset.txt",header = T)
 Total number of observations
 --------------------------------
 *There are total 30 subjects are participated in this study. 
-*There are 6 activities
-*The desired features are 66 (e.g., fBodyAcc-mean()-X)
-*Hence the total oberseration in the clean dataset is 30 x 6 x 66 = 11880
-*Refer to the CodeBook.md for a detail explaination of this tidy dataset
+*There are 6 activities("laying","sitting","standing","walking","walkingdownstairs","walkingupstairs")
+*There are 66 desired features(e.g., fBodyAcc-mean()-X)
+*Hence the total oberseration in the tidy dataset is 30 x 6 x 66 = 11880
+*Refer to the CodeBook.md for a detailed explaination of this tidy dataset
